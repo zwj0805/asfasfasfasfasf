@@ -34,7 +34,7 @@
   h3 {
     @include font-size(2.2rem);
     padding: 0;
-    margin: 0 0 10px 0;
+    margin: 0 0 10px;
     font-weight: 400;
     white-space: nowrap;
   }
@@ -81,8 +81,8 @@
     > small {
       display: block;
       margin-top: 5px;
-      color: $gray-100;
       font-size: .9rem;
+      color: $gray-100;
     }
   }
 
@@ -94,7 +94,7 @@
   // the icon
   .icon {
     z-index: 0;
-    color: rgba($black, 0.15);
+    color: rgba($black, .15);
 
     > i {
       @include transition(all $transition-speed linear);

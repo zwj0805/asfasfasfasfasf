@@ -25,6 +25,7 @@
 }
 
 // Gradient background
+// stylelint-disable value-no-vendor-prefix, function-linear-gradient-no-nonstandard-direction
 @mixin gradient($color: #F5F5F5, $start: #EEE, $stop: #FFF) {
   background: $color;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, $start), color-stop(1, $stop));
@@ -32,4 +33,4 @@
   background: -moz-linear-gradient(center bottom, $start 0%, $stop 100%);
   background: -o-linear-gradient($stop, $start);
 }
-
+// stylelint-enable
