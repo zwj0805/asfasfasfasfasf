@@ -27,7 +27,6 @@
     "css-minify:plugins": "npm run css-minify-bash -- dist/css/alt/adminlte.plugins.min.css dist/css/alt/adminlte.plugins.css",
     "css-lint": "npm-run-all --parallel css-lint-*",
     "css-lint-main": "stylelint \"build/scss/**/*.scss\" --cache --cache-location .cache/.stylelintcache",
-    "css-lint-docs": "stylelint \"docs/**/*.css\" --cache --cache-location .cache/.stylelintcache",
     "css-lint-vars": "fusv build/scss/ docs/",
     "compile": "npm-run-all --parallel js css-all",
     "dev": "npm-run-all --parallel watch sync",
