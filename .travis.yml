@@ -18,4 +18,5 @@ install:
   - if [ "npm" == $INSTALL ]; then npm install; fi
 
 script:
-  - echo 'Tests must be configured'
+  - if [ "yarn" == $INSTALL ]; then yarn run css-lint; fi
+  - if [ "npm" == $INSTALL ]; then npm run css-lint; fi
